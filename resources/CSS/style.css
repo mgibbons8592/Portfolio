@@ -1,4 +1,32 @@
-img {
-    height: 300px;
+body {
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 18px;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+}
+
+.about-me {
+    display: flex;
+}
+
+.about-me-text {
+    width: 1200px;
+    
+}
+
+.self {
+    height: 250px;
     width: 300px;
+    float: right;
+    margin-right: 50px;
+    margin-top: auto;
+}
+
+.icons img {
+    height: 50px;
+    width: 50px;
 }
