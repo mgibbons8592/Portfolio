@@ -2,6 +2,12 @@
     font-family: Helvetica;
 }
 
+.navbar span {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+}
 .navbar ul {
     list-style-type: none;
     margin: 0;
@@ -11,7 +17,7 @@
 }
 
 .navbar li {
-    float: left;
+    float: right;
 }
 
 .navbar li a {
@@ -23,11 +29,7 @@
 }
 
 nav li a:hover {
-    background-color: #111;
-}
-
-.about-me {
-    display: flex;
+    background-color: #0111;
 }
 
 .about-me-text {
@@ -36,11 +38,12 @@ nav li a:hover {
 }
 
 .self {
+    border-radius: 50%;
     height: 180px;
     width: 180px;
     float: right;
-    margin-right: 50px;
-    margin-top: auto;
+    margin-right: 20px;
+    margin-bottom: 50px;
 }
 
 .certificates li::marker {
