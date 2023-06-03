@@ -1,5 +1,11 @@
 * {
     font-family: Helvetica;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .navbar span {
@@ -32,30 +38,58 @@ nav li a:hover {
     background-color: #0111;
 }
 
+#header {
+    text-align: center;
+}
+
+#about-me {
+    border-bottom: 2px solid black;
+    height: 500px;
+}
+
 .about-me-text {
-    width: 1200px;
-    
+    font-size: 22px;
 }
 
-.self {
+.about-me-text img {
     border-radius: 50%;
-    height: 180px;
-    width: 180px;
+    height: 250px;
+    width: 250px;
     float: right;
-    margin-right: 20px;
-    margin-bottom: 50px;
 }
 
-.certificates li::marker {
-    content: "";
+#certificates {
+    height: 125px;
+    border-bottom: 2px solid black;
+    padding-top: 10px;
 }
 
+.courses {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#skills {
+    height: 150px;
+    border-bottom: 2px solid black;
+    padding-top: 10px;
+}
 .skills-icons img {
     height: 50px;
     width: 50px;
 }
 
-.contact {
+.skills-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+#projects {
+    height: 150px;
+    padding-top: 10px;
+}
+#contact {
     color: white;
     background-color: #111;
     text-align: center;
