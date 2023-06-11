@@ -8,6 +8,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Navigation Section */
 .navbar span {
     color: white;
     display: inline-block;
@@ -42,6 +43,7 @@ nav li a:hover {
     text-align: center;
 }
 
+/* About Me Section */
 #about-me {
     border-bottom: 2px solid black;
     height: 500px;
@@ -53,11 +55,12 @@ nav li a:hover {
 
 .about-me-text img {
     border-radius: 50%;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     float: right;
 }
 
+/* Certificates Section */
 #certificates {
     height: 125px;
     border-bottom: 2px solid black;
@@ -70,8 +73,9 @@ nav li a:hover {
     justify-content: space-between;
 }
 
+/* Skills Section*/
 #skills {
-    height: 150px;
+    height: 165px;
     border-bottom: 2px solid black;
     padding-top: 10px;
 }
@@ -85,14 +89,24 @@ nav li a:hover {
     justify-content: space-around;
 }
 
+.caption {
+    display: block;
+    text-align: center;
+}
+
+/* Projects Section*/
 #projects {
-    height: 150px;
+    height: 300px;
     padding-top: 10px;
 }
+
+/* Conact Section */
 #contact {
     color: white;
     background-color: #111;
     text-align: center;
+    padding-top: 10px;
+    height: 250px;
 }
 
 .icons img {
