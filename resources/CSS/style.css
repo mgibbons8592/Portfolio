@@ -10,7 +10,7 @@ html {
 
 /* Navigation Section */
 .navbar span {
-    color: white;
+    color: black;
     display: inline-block;
     text-align: center;
     padding: 14px 16px;
@@ -20,7 +20,7 @@ html {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: white;
 }
 
 .navbar li {
@@ -29,7 +29,7 @@ html {
 
 .navbar li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -39,14 +39,17 @@ nav li a:hover {
     background-color: #0111;
 }
 
-#header {
-    text-align: center;
-}
 
 /* About Me Section */
 #about-me {
     border-bottom: 2px solid black;
-    height: 500px;
+    height: 525px;
+    background-color: rgb(207, 227, 229);
+    overflow: hidden;
+}
+
+#header {
+    text-align: center;
 }
 
 .about-me-text {
@@ -60,11 +63,24 @@ nav li a:hover {
     float: right;
 }
 
+/* Resume Section */
+#resume {
+    height: 300px;
+    border-bottom: 2px solid black;
+    background-color: beige;
+    overflow: hidden;
+}
+
+resume-pic img {
+    height: 200px;
+}
+
 /* Certificates Section */
 #certificates {
     height: 125px;
     border-bottom: 2px solid black;
     padding-top: 10px;
+    background-color: beige;
 }
 
 .courses {
@@ -78,6 +94,7 @@ nav li a:hover {
     height: 165px;
     border-bottom: 2px solid black;
     padding-top: 10px;
+    background-color: beige;
 }
 .skills-icons img {
     height: 50px;
@@ -96,19 +113,22 @@ nav li a:hover {
 
 /* Projects Section*/
 #projects {
-    height: 500px;
+    height: 600px;
     padding-top: 10px;
+    background-color: rgb(207, 227, 229);
 }
 
 .project-pic img {
-    height: 350px;
+    height: 500px;
     width: 350px;
+    text-align: center;
+    padding-left: 155px;
 }
 
 /* Conact Section */
 #contact {
-    color: white;
-    background-color: #111;
+    color: black;
+    background-color: white;
     text-align: center;
     padding-top: 10px;
     height: 250px;
