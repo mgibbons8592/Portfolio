@@ -1,11 +1,16 @@
 * {
-    font-family: Helvetica;
-    margin-left: 10px;
-    margin-right: 10px;
+    font-family: sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+#header {
+    text-align: center;
+    font-size: 22px;
+    padding-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* Navigation Section */
@@ -31,70 +36,127 @@ html {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 6px;
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 nav li a:hover {
-    background-color: #0111;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
 }
 
+/*Header Image*/
+#me {
+    height: 450px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-color: #e7e8e9;
+}
+
+#me img {
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+}
+
+#me p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: gray;
+    font-size: 18px;
+    font-weight: 400;
+}
 
 /* About Me Section */
 #about-me {
-    border-bottom: 2px solid black;
-    height: 525px;
+    border-bottom: 2px solid white;
+    height: 500px;
     background-color: rgb(207, 227, 229);
     overflow: hidden;
-}
-
-#header {
-    text-align: center;
+    width: 100%;
+    display: flex;
 }
 
 .about-me-text {
-    font-size: 22px;
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 24px;
+    width: 50%;
+    margin-left: 2.5%;
 }
 
-.about-me-text img {
-    border-radius: 50%;
-    height: 300px;
-    width: 300px;
+.about-me-text h2 {
+    margin-left: 2.5%;
+    text-align: center;
+}
+
+.social-media {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    height: 335px;
     float: right;
+    margin-left: 200px;
+    
+}
+
+.links img {
+    height: 40px;
+    width: 40px;
 }
 
 /* Resume Section */
 #resume {
-    height: 300px;
-    border-bottom: 2px solid black;
-    background-color: beige;
+    height: 500px;
+    border-bottom: 2px solid whitesmoke;
+    background-color: rgb(207, 227, 229);
     overflow: hidden;
 }
 
-resume-pic img {
+#resume img {
     height: 200px;
 }
 
+
 /* Certificates Section */
 #certificates {
-    height: 125px;
-    border-bottom: 2px solid black;
+    height: 165px;
+    border-bottom: 2px solid gray;
     padding-top: 10px;
-    background-color: beige;
+    background-color: rgb(207, 227, 229);
 }
 
 .courses {
-    font-size: 18px;
+    padding-top: 12px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: 300;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 /* Skills Section*/
 #skills {
     height: 165px;
-    border-bottom: 2px solid black;
     padding-top: 10px;
-    background-color: beige;
+    background-color: rgb(207, 227, 229);
 }
 .skills-icons img {
     height: 50px;
@@ -104,6 +166,9 @@ resume-pic img {
 .skills-icons {
     display: flex;
     justify-content: space-around;
+    padding-top: 12px;
+    letter-spacing: 1.5px;
+    font-weight: 300;
 }
 
 .caption {
@@ -113,16 +178,16 @@ resume-pic img {
 
 /* Projects Section*/
 #projects {
-    height: 600px;
+    height: 650px;
     padding-top: 10px;
-    background-color: rgb(207, 227, 229);
+    background-color: #e7e8e9;
 }
 
 .project-pic img {
     height: 500px;
     width: 350px;
     text-align: center;
-    padding-left: 155px;
+    padding-left: 190px;
 }
 
 /* Conact Section */
@@ -134,7 +199,14 @@ resume-pic img {
     height: 250px;
 }
 
+#contact p {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
 .icons img {
     height: 50px;
     width: 50px;
+    margin-left: 5px;
 }
