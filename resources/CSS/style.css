@@ -13,45 +13,78 @@ html {
     margin-bottom: 10px;
 }
 
+.wrapper {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+a {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: gray;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
 /* Navigation Section */
+.navbar {
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 100%;
+}
+
 .navbar span {
     color: black;
     display: inline-block;
-    text-align: center;
-    padding: 14px 16px;
+    padding: 8px 8px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
 }
+
 .navbar ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
-    background-color: white;
+    padding: 0%;
 }
 
 .navbar li {
     float: right;
+    background-color: white;
 }
 
 .navbar li a {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 6px;
+    padding: 14px 8px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 400;
+    background-color: white;
 }
 
-nav li a:hover {
+.navbar li a:hover {
     background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.navbar a:hover {
     border: 1px solid black;
     padding: 5px;
 }
 
 /*Header Image*/
 #me {
-    height: 450px;
+    height: 490px;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 50px;
@@ -60,8 +93,8 @@ nav li a:hover {
 
 #me img {
     border-radius: 50%;
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
 }
 
 #me p {
@@ -74,36 +107,31 @@ nav li a:hover {
 
 /* About Me Section */
 #about-me {
-    border-bottom: 2px solid white;
-    height: 500px;
-    background-color: rgb(207, 227, 229);
+    border-bottom: 1px solid black;
+    height: 525px;
     overflow: hidden;
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-me-text {
-    padding-top: 10px;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1px;
     line-height: 24px;
-    width: 50%;
-    margin-left: 2.5%;
-}
-
-.about-me-text h2 {
-    margin-left: 2.5%;
-    text-align: center;
+    max-width: 65%;
 }
 
 .social-media {
     text-align: center;
-    padding-top: 10px;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 1px;
-    line-height: 24px;
+    line-height: 32px;
+    margin-left: 5%;
 }
 
 .links {
@@ -111,102 +139,70 @@ nav li a:hover {
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    height: 335px;
+    height: 350px;
     float: right;
-    margin-left: 200px;
-    
 }
-
-.links img {
-    height: 40px;
-    width: 40px;
-}
-
-/* Resume Section */
-#resume {
-    height: 500px;
-    border-bottom: 2px solid whitesmoke;
-    background-color: rgb(207, 227, 229);
-    overflow: hidden;
-}
-
-#resume img {
-    height: 200px;
-}
-
 
 /* Certificates Section */
 #certificates {
-    height: 165px;
-    border-bottom: 2px solid gray;
-    padding-top: 10px;
-    background-color: rgb(207, 227, 229);
+    height: 150px;
+    max-width: 100%;
 }
 
 .courses {
-    padding-top: 12px;
     font-size: 16px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     font-weight: 300;
+    text-align: center;
     display: flex;
     justify-content: space-evenly;
 }
 
-/* Skills Section*/
-#skills {
-    height: 165px;
-    padding-top: 10px;
-    background-color: rgb(207, 227, 229);
-}
-.skills-icons img {
-    height: 50px;
-    width: 50px;
-}
-
-.skills-icons {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 12px;
-    letter-spacing: 1.5px;
-    font-weight: 300;
-}
-
-.caption {
-    display: block;
-    text-align: center;
-}
-
 /* Projects Section*/
 #projects {
-    height: 650px;
-    padding-top: 10px;
+    height: 250px;
     background-color: #e7e8e9;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.project-pic img {
-    height: 500px;
-    width: 350px;
-    text-align: center;
-    padding-left: 190px;
+.project-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 /* Conact Section */
 #contact {
-    color: black;
-    background-color: white;
-    text-align: center;
-    padding-top: 10px;
-    height: 250px;
-}
-
-#contact p {
-    font-size: 16px;
-    font-weight: 300;
+    text-align: right;
+    height: 100px;
     letter-spacing: 1.5px;
 }
 
-.icons img {
-    height: 50px;
-    width: 50px;
-    margin-left: 5px;
+/* Media queries */
+@media  screen and (max-width: 800px) {
+    p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    
+    .navbar, #contact {
+        text-align: center;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .courses {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
