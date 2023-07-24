@@ -1,19 +1,35 @@
 * {
-    font-family: sans-serif;
+    font-family: 'Roboto';
+    font-weight: 400;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-#header {
+p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #363636;
+}
+
+h2 {
     text-align: center;
     font-size: 22px;
     padding-top: 10px;
     margin-bottom: 10px;
+    color: #223f72;
+}
+
+.left {
+    text-align: left;
+    font-size: 36px;
 }
 
 .wrapper {
+    padding-top: 15px;
     padding-left: 5%;
     padding-right: 5%;
     margin-top: 15px;
@@ -23,7 +39,7 @@ html {
 a {
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: gray;
+    color: white;
     font-size: 18px;
     font-weight: 400;
 }
@@ -38,6 +54,7 @@ img {
     margin-left: 5%;
     margin-right: 5%;
     max-width: 100%;
+    color: #363636;
 }
 
 .navbar span {
@@ -68,7 +85,6 @@ img {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 400;
-    background-color: white;
 }
 
 .navbar li a:hover {
@@ -84,11 +100,11 @@ img {
 
 /*Header Image*/
 #me {
-    height: 490px;
+    height: 500px;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 50px;
-    background-color: #e7e8e9;
+    background-color: #214072;
 }
 
 #me img {
@@ -100,7 +116,7 @@ img {
 #me p {
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: gray;
+    color: white;
     font-size: 18px;
     font-weight: 400;
 }
@@ -108,20 +124,13 @@ img {
 /* About Me Section */
 #about-me {
     border-bottom: 1px solid black;
-    height: 525px;
     overflow: hidden;
     max-width: 100%;
     max-height: 100%;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .about-me-text {
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    line-height: 24px;
     max-width: 65%;
 }
 
@@ -145,7 +154,6 @@ img {
 
 /* Certificates Section */
 #certificates {
-    height: 150px;
     max-width: 100%;
 }
 
@@ -160,8 +168,8 @@ img {
 
 /* Projects Section*/
 #projects {
-    height: 250px;
-    background-color: #e7e8e9;
+    height: 275px;
+    background-color: #214072;
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
@@ -186,7 +194,7 @@ img {
 }
 
 /* Media queries */
-@media  screen and (max-width: 800px) {
+@media  screen and (max-width: 1000px) {
     p {
         font-size: 12px;
         line-height: 15px;
@@ -204,5 +212,12 @@ img {
     .courses {
         display: flex;
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar li  {
+        text-align: center;
+        float: none;
     }
 }
